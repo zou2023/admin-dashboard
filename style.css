@@ -69,7 +69,7 @@ ul li:hover {
 /* main-side */
 
 .main-side {
-  background-color: rgb(205, 203, 203);
+  background-color: rgb(210, 213, 216);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 8rem 1fr;
@@ -161,6 +161,7 @@ p {
 .buttons {
   margin-left: auto;
   align-self: center;
+  display: flex;
 }
 
 .buttons button {
@@ -178,4 +179,150 @@ p {
 
 .buttons button:hover {
   background-color: #107ed2;
+}
+
+/* container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 17rem;
+  overflow-y: auto;
+}
+
+.titlecenter {
+  display: flex;
+  height: 3.4rem;
+  align-items: flex-end;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.right-bar {
+  height: calc(100% - 8rem);
+}
+
+.post-grid-container {
+  width: 100%;
+  height: calc(100% - 3.4rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, calc(25rem + 8px));
+  gap: 1.4rem;
+  justify-content: center;
+}
+
+.post {
+  width: 25rem;
+  height: 14rem;
+  background-color: white;
+  border-left: solid 8px rgb(255, 191, 0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding-right: 2rem;
+  height: 10rem;
+}
+
+.post-text h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+.post-text p {
+  margin: 0;
+  color: rgb(91, 91, 91);
+  font-size: 0.95rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+}
+
+.icons img {
+  width: 1.7rem;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.icons img:hover {
+  opacity: 0.7;
+}
+
+.icons {
+  align-self: flex-end;
+}
+
+.announcements {
+  background-color: whitesmoke;
+  width: 90%;
+  height: 15rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 8px;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.trending {
+  background-color: whitesmoke;
+  width: 90%;
+  height: 17rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-left: 8px;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.announcement {
+  width: 13rem;
+  margin: 0;
+}
+.announcement h5 {
+  margin: 0;
+}
+.announcement p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.trend {
+  width: 13rem;
+  margin: 0;
+}
+.trend h5 {
+  margin: 0;
+}
+.trend p {
+  margin: 0;
+  font-size: 0.8rem;
 }
